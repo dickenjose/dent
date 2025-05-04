@@ -7,7 +7,7 @@ const obtenerUsuarios = async (req, res) => {
     const usuarios = await Usuario.find();
     res.json(usuarios);
   } catch (error) {
-    res.status(500).json({ mensaje: 'Error al obtener usuarios' });
+    res.status(500).json({ mensaje: 'Error al obtener usuarios Fatal!!' });
   }
 };
 
